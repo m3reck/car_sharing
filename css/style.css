@@ -345,3 +345,86 @@ button a{
     box-shadow: 0 1px 6px #FF00004D;
     border-radius: 8px;
 }
+.contact-service img{
+    max-width: 49%;
+
+}
+.contactform{
+    max-width: 49%;
+}
+input[type="text"]{
+    border: 1px solid #D1D1D1;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+input[type="email"]{
+    border: 1px solid #D1D1D1;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+textarea{
+    border: 1px solid #D1D1D1;
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-label{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.checkbox{
+    appearance: none;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+label> span{
+    font-family: "Open Sans l", sans-serif;
+    font-size: 10px;
+    text-align: left;
+    color: #B2B2B2;
+    font-weight: 100;
+    width: 412px;
+    height: 71px;
+    margin-bottom: 20px;
+}
+
+
+
+input:hover, input:focus, textarea:hover, textarea:focus{
+    border: 1px solid #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+}
+input::placeholder{
+    padding-left: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    color: #B2B2B2;
+}
+textarea::placeholder{
+    padding-left: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    color: #B2B2B2;
+}
