@@ -302,6 +302,18 @@ button a{
 .article--service img{
     max-width: 100%;
 }
+.article--service img:hover{
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 .article--service h3{
     font-family: "Nunito Sans", sans-serif;
     font-size: 19px;
@@ -502,6 +514,7 @@ footer>.logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
 }
 .footer--first--half li{
     font-size: 14px;
@@ -509,10 +522,32 @@ footer>.logo{
     color: #FFFFFF;
     list-style: none;
 }
-.home-share{
-    margin-bottom: 7px;
+.footer--second--half li{
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #FFFFFF;
+    list-style: none;
 }
-.price-contact{
-    margin-bottom: 7px;
+footer>span{
+    align-self: flex-end;
+    color: #D1D1D1;
+    font-size: 12px;
+    font-family: "Nunito Sans l", sans-serif;
+    font-weight: 100
 }
-
+ul li{
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ul li:hover{
+    color: #FF0000;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
